@@ -1,6 +1,6 @@
 ## Developers Today
 
-### Technical task for the position of Junior Software Developer
+### Technical task for the position of Software Developer
 
 > A few tips of how to start React app from 2nd task:
 

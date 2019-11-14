@@ -1,4 +1,4 @@
-## Lebi.dev
+## Developers Today
 
 ### Technical task for the position of Junior Software Developer
 

@@ -11,33 +11,34 @@ import setAuthToken from './utils/setAuthToke';
 
 import AuthState from './context/auth/AuthState';
 import AlertState from './context/alert/AlertState';
+import ContactState from './context/contact/ContactState';
 import './App.css';
 
-
-if(localStorage.token) {
-  setAuthToken(localStorage.token)
+if (localStorage.token) {
+  setAuthToken(localStorage.token);
 }
-
 
 const App = () => {
   return (
-    <AuthState>
-      <AlertState>
-        <Router>
-          <Fragment>
-            <Navbar />
-            <div className='container'>
-              <Alerts />
-              <Switch>
-                <PrivateRoute exact path='/' component={Home} />
-                <Route exact path='/register' component={Register} />
-                <Route exact path='/login' component={Login} />
-              </Switch>
-            </div>
-          </Fragment>
-        </Router>
-      </AlertState>
-    </AuthState>
+    <ContactState>
+      <AuthState>
+        <AlertState>
+          <Router>
+            <Fragment>
+              <Navbar />
+              <div className='container'>
+                <Alerts />
+                <Switch>
+                  <PrivateRoute exact path='/' component={Home} />
+                  <Route exact path='/register' component={Register} />
+                  <Route exact path='/login' component={Login} />
+                </Switch>
+              </div>
+            </Fragment>
+          </Router>
+        </AlertState>
+      </AuthState>
+    </ContactState>
   );
 };
 

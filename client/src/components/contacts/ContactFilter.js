@@ -9,7 +9,7 @@ const ContactFilter = () => {
     if(filtered === null) {
       text.current.value = '';
     }
-  }, [contactContext])
+  }, [contactContext, filtered])
 
   const onChange = e => {
     if(text.current.value !== '') {

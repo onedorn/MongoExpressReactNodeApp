@@ -1,0 +1,5 @@
+{
+    "mongoURI": "mongodb+srv://admin:admin@labi-dev-0s32k.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret": "secret"
+  }
+  
